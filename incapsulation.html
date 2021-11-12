@@ -1,0 +1,59 @@
+<script type="text/javascript">
+	class students{
+		constructor(){
+			var name;
+			var marks;
+		}
+		getName(){
+			return this.name;
+		}
+		setName(name){
+			this.name = name;
+		}
+		setMarks(marks){
+			this.marks = marks
+		}
+		getMarks(){
+			return this.marks;
+		}
+	}
+	var stdn = new students();
+	var stdn2 =new students();
+	stdn.setName("Mohamed Abdlullah");
+	stdn.setMarks(90);
+	stdn2.setName("Muna Yasiri");
+	stdn2.setMarks(88);
+	document.writeln(stdn.getName() + "  " +stdn.getMarks());
+	document.writeln(stdn2.getName() + "  " +stdn2.getMarks());
+
+	class students2{
+		constructor(){
+			var name;
+			var marks;
+		}
+		getName(){
+			return this.name;
+		}
+		setName(name){
+			this.name = name;
+		}
+		getMarks(){
+			return this.marks; 
+		}
+		setMarks(marks){
+			if(marks<0|| marks> 100){
+				alert("you entered invalid marks");
+			}
+			else{
+				this.marks = marks;
+
+			}
+			
+		}
+	}
+	var stdd = new students2();
+	stdd.setName("Idephonse Mohamed");
+	stdd.setMarks(67);
+	document.writeln(stdd.getName() + " " + stdd.getMarks());
+
+</script>
